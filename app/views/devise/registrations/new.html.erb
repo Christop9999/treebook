@@ -6,7 +6,7 @@
 <legend>Sign Up</legend>
   <%= devise_error_messages! %>
 
-  <div>
+  <div class = "form_control form_control-inline">
       <%= f.input :first_name %>
        
   </div>
@@ -28,7 +28,7 @@
     <% if @validatable %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+    
   </div>
 
   <div class="field">

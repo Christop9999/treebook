@@ -16,3 +16,9 @@
 
 
  body { padding-top: 45px;}
+
+ .form-control-inline {
+    min-width: 0;
+    width: auto;
+    display: inline;
+}
