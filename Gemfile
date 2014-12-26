@@ -8,6 +8,10 @@ gem 'rails', '4.1.6'
 group :development, :test do
 	gem 'sqlite3' 
 end
+
+group :production do
+	gem 'pg'
+end
 # Use SCSS for stylesheets
 gem 'protected_attributes'
 gem 'devise'
