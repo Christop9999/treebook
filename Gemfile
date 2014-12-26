@@ -12,6 +12,10 @@ end
 group :production do
 	gem 'pg'
 end
+
+group :production do
+  gem 'rails_12factor'
+end
 # Use SCSS for stylesheets
 gem 'protected_attributes'
 gem 'devise'
