@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'profiles/show'
+
   resources :statuses
   devise_for :users, :controllers => {:registrations => "users/registrations"}
   devise_scope :user do
