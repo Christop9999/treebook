@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/seuros/state_machine.git
+  revision: b5baef856b170f18dc2fdc36def2411c255335b9
+  specs:
+    state_machine (1.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -44,8 +50,22 @@ GEM
       responders
       thread_safe (~> 0.1)
       warden (~> 1.2.3)
+    draper (1.4.0)
+      actionpack (>= 3.0)
+      activemodel (>= 3.0)
+      activesupport (>= 3.0)
+      request_store (~> 1.0)
     erubis (2.7.0)
     execjs (2.2.2)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.5.0)
+      factory_girl (~> 4.5.0)
+      railties (>= 3.0.0)
+    hashie (3.3.2)
+    hashie_rails (0.0.1)
+      hashie (>= 3.0)
+      rails (~> 4.0)
     hike (1.2.3)
     i18n (0.6.11)
     jbuilder (2.2.5)
@@ -90,6 +110,7 @@ GEM
     rake (10.4.2)
     rdoc (4.2.0)
       json (~> 1.4)
+    request_store (1.1.0)
     responders (1.1.2)
       railties (>= 3.2, < 4.2)
     sass (3.2.19)
@@ -141,6 +162,9 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   devise
+  draper (~> 1.0)
+  factory_girl_rails
+  hashie_rails
   jbuilder (~> 2.0)
   jquery-rails
   pg
@@ -152,6 +176,7 @@ DEPENDENCIES
   shoulda
   simple_form
   sqlite3
+  state_machine!
   turbolinks
   tzinfo-data
   uglifier (>= 1.3.0)

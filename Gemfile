@@ -4,10 +4,15 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use sqlite3 as the database for Active Record
-
+gem "hashie_rails"
 group :test do
 	gem 'shoulda'
+	gem 'factory_girl_rails'
 end
+
+
+
+gem 'state_machine', :git => 'https://github.com/seuros/state_machine.git'
 
 group :development, :test do
 	gem 'sqlite3' 
@@ -16,6 +21,7 @@ end
 group :production do
 	gem 'pg'
 end
+gem 'draper', '~> 1.0'
 
 group :production do
   gem 'rails_12factor'
